@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<page>
+    <!-- user模块 -->
+    <database name="user">
+        <table name="login">
+            <sql id="add_login">SELECT TOKEN from t_user_login_record ORDER BY UPDTAE_TIME DESC LIMIT 1</sql>
+        </table>
+        <table name="info">
+             <sql id="user_info">SELECT USERNAME from t_user where USERNAME = 'ssssss806' and IS_DELETE = '0'</sql>
+        </table>
+        <table name="div_info">
+             <sql id="div_info">SELECT DEPARTMENT_NAME FROM t_department ORDER BY UPDATE_TIME DESC LIMIT 1</sql>
+        </table>
+        <table name="div_del">
+             <sql id="div_del">SELECT IS_DELETE FROM t_department ORDER BY UPDATE_TIME DESC LIMIT 1</sql>
+        </table>
+        <table name="staff_amend">
+             <sql id="staff_amend">SELECT WORKER_NAME from t_corp_employee ORDER BY UPDATE_TIME DESC LIMIT 1</sql>
+        </table>
+        <table name="staff_del">
+             <sql id="staff_del">select IS_DELETE from t_corp_employee ORDER BY UPDATE_TIME DESC LIMIT 1</sql>
+        </table>
+    </database>
+    <!-- caller模块 -->
+    <database name="caller">
+        <table name="caller_code">
+            <sql id="caller_code">select PHONE from t_message_temp ORDER BY UPDATE_TIME DESC LIMIT 1</sql>
+        </table>
+        <table name="caller_code_verify">
+            <sql id="caller_code_verify">select CHECK_CODE from t_message_temp ORDER BY UPDATE_TIME DESC LIMIT 1</sql>
+        </table>
+    </database>
+</page>
+ 

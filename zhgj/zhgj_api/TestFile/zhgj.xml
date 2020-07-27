@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<interface>
+	<!-- user模块 -->
+    <url name="zhgj_login">
+        <group>web</group>
+        <group>login</group>
+        <action>userLogin</action>
+    </url>
+    <url name="zhgj_userInfo">
+        <group>web</group>
+        <group>login</group>
+        <action>userInfo</action>
+    </url>
+    <url name="zhgj_userdiv">
+        <group>web</group>
+        <group>department</group>
+        <action>addDepartment</action>
+    </url>
+    <url name="zhgj_userdiv_info">
+        <group>web</group>
+        <group>department</group>
+        <action>getTee</action>
+    </url>
+    <url name="zhgj_userdiv_del">
+        <group>web</group>
+        <group>department</group>
+        <action>deleteDepartment</action>
+    </url>
+    <url name="zhgj_staff_add">
+        <group>web</group>
+        <group>employee</group>
+        <action>save</action>
+    </url>
+    <url name="zhgj_staff_info">
+        <group>web</group>
+        <group>employee</group>
+        <action>list</action>
+    </url>
+    <url name="zhgj_staff_info_staff">
+        <group>web</group>
+        <group>employee</group>
+        <action>detail</action>
+    </url>
+    <url name="zhgj_staff_mangea">
+        <group>web</group>
+        <group>employee</group>
+        <action>manage</action>
+    </url>
+    <url name="zhgj_staff_export">
+        <group>web</group>
+        <group>employee</group>
+        <action>export</action>
+    </url>
+    <!-- caller模块 -->
+    <url name="zhgj_caller_add">
+        <group>web</group>
+        <group>visitor</group>
+        <action>invite</action>
+    </url>
+    <url name="zhgj_caller_Code">
+        <group>common</group>
+        <group>shortMsg</group>
+        <action>getVerificationCode</action>
+    </url>
+</interface>
